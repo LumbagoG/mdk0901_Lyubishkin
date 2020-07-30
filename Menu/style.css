@@ -1,0 +1,130 @@
+html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2rem;
+  overflow-y: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.menu img {
+  width: 100px;
+  margin: 1%;
+}
+
+.menu-open .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+  height: 100%;
+  padding: 4%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.226);
+          box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.226);
+  background-color: white;
+  -webkit-transform: translate(-200%, -20%);
+          transform: translate(-200%, -20%);
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.menu-open .nav img {
+  width: 10%;
+  cursor: pointer;
+}
+
+.menu-open .nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+.menu-open .nav ul li {
+  margin-top: 40%;
+}
+
+.menu-open .nav ul li:nth-child(2) {
+  margin-top: 0%;
+}
+
+.menu-open .nav ul li:nth-child(1) {
+  -webkit-transform: translate(-50%, -300%);
+          transform: translate(-50%, -300%);
+}
+
+.menu-open .nav ul a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3em;
+}
+
+.menu-open .nav ul a:hover {
+  -webkit-text-decoration: dashed;
+          text-decoration: dashed;
+}
+
+.active {
+  -webkit-animation: anim 2s ease 0s 1 alternate forwards;
+          animation: anim 2s ease 0s 1 alternate forwards;
+}
+
+@-webkit-keyframes anim {
+  from {
+    -webkit-transform: translate(-200%, -20%);
+            transform: translate(-200%, -20%);
+  }
+  to {
+    -webkit-transform: translateX(128%);
+            transform: translateX(128%);
+  }
+}
+
+@keyframes anim {
+  from {
+    -webkit-transform: translate(-200%, -20%);
+            transform: translate(-200%, -20%);
+  }
+  to {
+    -webkit-transform: translateX(128%);
+            transform: translateX(128%);
+  }
+}
+
+img {
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+img:hover {
+  -webkit-transform: rotate(359.9999deg);
+          transform: rotate(359.9999deg);
+}
+/*# sourceMappingURL=style.css.map */
